@@ -37,6 +37,7 @@ robot.login(secrets.token)
   .then( () => {
     console.log('Beep boop, started.');
   })
-  .catch( () => {
+  .catch( (reason) => {
     console.log('Startup failed, beep boop.')
+    console.log(reason);
   })
