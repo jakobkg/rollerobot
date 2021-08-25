@@ -33,4 +33,10 @@ robot.on('messageReactionRemove', (event, user) => {
   updateRole('remove', robot, event, user);
 })
 
-robot.login(secrets.token);
+robot.login(secrets.token)
+  .then( () => {
+    console.log('Beep boop, started.');
+  })
+  .catch( () => {
+    console.log('Startup failed, beep boop.')
+  })

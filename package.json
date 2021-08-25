@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Discord-robot for å gi seg selv roller i en server",
   "main": "src/robot.ts",
+  "repository": {"url": "https://github.com/jakobkg/rollerobot"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn --transpile-only ./src/robot.ts"
+    "dev": "ts-node-dev --respawn --transpile-only ./src/robot.ts",
+    "start": "tsc && node dist/src/robot.js"
   },
   "author": "Jakob Grønhaug",
   "license": "GPL-3.0-or-later",
